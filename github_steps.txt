@@ -1,3 +1,5 @@
+                                                   My cheatsheet of GIT
+
 git config --global user.name deepak
 git config --global user.email deepakjsr25@gmail.com
 git config --global user.email
@@ -9,24 +11,31 @@ ls -lart
 git status
 git status -s -> to see modified or unmodified stage ( first  letter in GREEN says file in staging area has been modified and second letter in RED says file has been modified in working directory.
 
+---------------------------------------------------------------------------------------------------------|
+
 ARCHITECTURE ----
  
-      UNTRACKED               UNMODIFIED              MODIFIED              STAGED
+      UNTRACKED               UNMODIFIED              MODIFIED              STAGED                       | 
 
            Add the file
-       --------------------------------------------------------------------->>
+       --------------------------------------------------------------------->>                           |
 
                                     Edit the file
                                   ---------------------->>                                   
                                                             Stage the file    
-                                                         -------------------->>               
+                                                         -------------------->>                          |              
            Remove the file
        <<---------------------------    
                                                      Commit
-                                 <<------------------------------------------  
+                                 <<------------------------------------------                            |
 
+
+----------------------------------------------------------------------------------------------------------
+git add filename.ext ---> To stage a file
+git restore --staged filename.ext ---> to unstage a file if bymistake you have staged
 git add -A ->To stage all at once
 
+-----------------------------------------------------------------------------------------
 git commit ---                 |        Alternate -> git add -m "Adding more htmls" 
  I to type                     | 
 'Esc' + ':' + 'w' + 'q'        | 
@@ -34,7 +43,8 @@ git commit ---                 |        Alternate -> git add -m "Adding more htm
 git commit -a -m "your message" -> To commit all without staging i.e skip staging.
 
 
-if your file is modified then you can get iit back by -> git checkout  example.html
+-------------------------------------------------------------------------------------------------------
+if your file is modified then you can get it back by -> git checkout  example.html
 it matches with my last commit
 
 To match all files with last commit type -> git commit -f
