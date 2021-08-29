@@ -103,4 +103,4 @@ git push origin master ---> { if you has declared it private yo need to get read
                                          (10) Type --> git remote set-url "copy the url from SSH in git" 
                                          (11) finally type --> git -u push origin master
 
-git push -u origin example_branch ---> to push another branch 
+git push -u origin example_branch ---> to push another branch like master branch
